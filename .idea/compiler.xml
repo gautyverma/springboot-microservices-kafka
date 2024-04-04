@@ -8,11 +8,13 @@
         <outputRelativeToContentRoot value="true" />
         <module name="springboot-Kafka-1" />
         <module name="kafka-producer-wikimedia" />
+        <module name="kafka-consumer-db" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="kafka-consumer-db" options="-parameters" />
       <module name="kafka-producer-wikimedia" options="-parameters" />
       <module name="springboot-Kafka-1" options="-parameters" />
       <module name="springboot-kafka-2" options="" />

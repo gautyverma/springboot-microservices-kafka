@@ -2,6 +2,7 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/a1_springboot-Kafka-1/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/a2_project1-MS-kafka/springboot-kafka-2/kafka-consumer-db/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/a2_project1-MS-kafka/springboot-kafka-2/kafka-producer-wikimedia/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/a2_project1-MS-kafka/springboot-kafka-2/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/a2_project1-MS-kafka/springboot-kafka-2/src/main/resources" charset="UTF-8" />
