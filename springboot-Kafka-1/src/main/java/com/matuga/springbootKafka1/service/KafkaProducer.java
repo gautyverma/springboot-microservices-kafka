@@ -18,6 +18,8 @@ public class KafkaProducer {
 
   public void sendMessage(String message) {
     LOGGER.info(String.format("Message sent %s ", message));
-    kafkaTemplate.send(TOPIC_MATUGA, message);
+    for (int i = 1; i < 11; i++) {
+      kafkaTemplate.send(TOPIC_MATUGA, message + " :" + i);
+    }
   }
 }
