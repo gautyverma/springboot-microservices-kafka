@@ -1,6 +1,7 @@
 package com.matuga.springbootKafka1.service;
 
 import static com.matuga.springbootKafka1.util.KafkaConstants.TOPIC_MATUGA;
+import static com.matuga.springbootKafka1.util.KafkaConstants.TOPIC_MATUGA_JSON;
 
 import com.matuga.springbootKafka1.model.User;
 import org.slf4j.Logger;
@@ -18,10 +19,6 @@ public class KafkaProducer {
   @Autowired private KafkaTemplate<String, String> kafkaTemplate;
   @Autowired private KafkaTemplate<String, User> kafkaUserTemplate;
 
-  //  public KafkaProducer(KafkaTemplate<String, String> kafkaTemplate) {
-  //    this.kafkaTemplate = kafkaTemplate;
-  //  }
-
   public void sendMessage(String message) {
     LOGGER.info(String.format("Message sent %s ", message));
     for (int i = 1; i < 11; i++) {
@@ -31,9 +28,9 @@ public class KafkaProducer {
 
   public void sendMessage(User data) {
 
-    LOGGER.info(String.format("Message sent %s", data.toString()));
+    LOGGER.info(String.format("Message sent - %s", data.toString()));
     Message<User> message =
-        MessageBuilder.withPayload(data).setHeader(KafkaHeaders.TOPIC, TOPIC_MATUGA).build();
+        MessageBuilder.withPayload(data).setHeader(KafkaHeaders.TOPIC, TOPIC_MATUGA_JSON).build();
     kafkaUserTemplate.send(message);
   }
 }

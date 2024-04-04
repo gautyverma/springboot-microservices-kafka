@@ -14,4 +14,9 @@ public class KafkaTopic {
   public NewTopic matugaTopic() {
     return TopicBuilder.name(TOPIC_MATUGA).build();
   }
+
+  @Bean
+  public NewTopic matugaJsonTopic() {
+    return TopicBuilder.name(TOPIC_MATUGA).build();
+  }
 }
