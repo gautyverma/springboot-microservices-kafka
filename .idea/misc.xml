@@ -6,6 +6,9 @@
       <list>
         <option value="$PROJECT_DIR$/springboot-Kafka-1/pom.xml" />
         <option value="$PROJECT_DIR$/project1-MS-kafka/springboot-kafka-2/pom.xml" />
+        <option value="$PROJECT_DIR$/a1_springboot-Kafka-1/pom.xml" />
+        <option value="$PROJECT_DIR$/a2_project1-MS-kafka/springboot-kafka-2/pom.xml" />
+        <option value="$PROJECT_DIR$/a2_project1-MS-kafka/springboot-kafka-2/kafka-producer-wikimedia/pom.xml" />
       </list>
     </option>
   </component>
