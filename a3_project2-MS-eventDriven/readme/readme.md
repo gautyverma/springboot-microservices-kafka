@@ -1,0 +1,4 @@
+- ms1-order-service : 8585
+- ms2-stock-service : 8484 
+- ms3-email-service : 8383
+- ms4-base-domain : 8282
